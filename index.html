@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Torre de Hanoi</title>
+  </head>
+  <body>
+    <header>
+      <h1>TORRE DE HANOI</h1>
+    </header>
+    <main>
+      <div id="selecao">
+        <label for="" id="label">Selecione a Dificuldade</label>
+        <select name="" id="dificuldade" onChange="update()">
+          <option value="-1">Selecione</option>
+          <option value="1">Normal</option>
+          <option value="2">Médio</option>
+          <option value="3">Dificil</option>
+        </select>
+      </div>
+      <div class="container">
+        <section id="start-caixa" class="caixa">
+          <div id="start" class="caixa-torre"></div>
+        </section>
+        <section id="offset-caixa" class="caixa">
+          <div id="offset" class="caixa-torre"></div>
+        </section>
+        <section id="end-caixa" class="caixa">
+          <div id="end" class="end caixa-torre"></div>
+        </section>
+      </div>
+      <div id="info"></div>
+    </main>
+
+    <!--JavaScript-->
+
+    <script src="javaScript.js"></script>
+  </body>
+</html>
